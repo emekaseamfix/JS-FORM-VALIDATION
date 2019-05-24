@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="index.css" rel="stylesheet" />
+    <title>JavaScript DOM Tutorials</title>
+  </head>
+  <body>
+
+    <!-- test1 -->
+    <p>Enter a name - maximum is 10 chracters</p>
+    <input id="mytext" type="text">
+    <input type="button" value="click" onclick="myfunction()">
+    <p id="error"></p>
+
+    <!-- test2 -->
+    <form  id="myform">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+      </div>
+      <div>
+          <label for="mail">Email:</label>
+          <input type="email" id="mail">
+      </div>
+      <div>
+          <label for="msg">Message:</label>
+          <input type="text" id="msg">
+      </div>
+      <div class="button">
+        <button type="submit" id="submit" > send your Message </button>
+      </div>
+      <div id="output"></div>
+    </form>  
+
+
+
+    <!-- test3 -->
+
+    <form action="msg.html" onsubmit="return validate()">
+<!-- required in inputs -->
+      <input  id="uname" placeholder="username" type="text"> <br><br>
+
+      <input  id="pass" placeholder="password" type="password"> <br><br>
+
+      <button type="submit" >Submit</button>
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
