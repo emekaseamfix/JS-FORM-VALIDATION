@@ -61,26 +61,49 @@ function checkform(){
 
 
 
-// test3
+// test3a
+
+// function validate(){
+//     var username = document.getElementById("uname");
+//     var password = document.getElementById("pass");
+
+//     if(username.value.trim() == "" || password.value.trim() == ""){
+//         alert("no blank allowed")
+//         return false;
+//     }
+//     else{
+//         return true;
+//     }
+
+// }
+
+
+// test3b
 
 function validate(){
-    var username = document.getElementById("uname");
-    var password = document.getElementById("pass");
+        var username = document.getElementById("uname");
+        var password = document.getElementById("pass");
+    
+        if(username.value.trim() == "" ){
+            //alert("no blank name allowed")
+            username.style.border=="solid 3px red";
+            document.getElementById("ibluser").style.visibility="visible";
+            return false;
+        }
+        else if(password.value.trim() == ""){
+            alert("no blank password allowed")
+            return false;
+        }
 
-    if(username.value.trim() == "" || password.value.trim() == ""){
-        alert("no blank allowed")
-        return false;
+        else if(password.value.trim().length <5 ){
+            alert(" password too short ")
+            return false;
+        }
+        else{
+            return true;
+        }
+    
     }
-    else{
-        return true;
-    }
-
-}
-
-
-
-
-
 
 
 
